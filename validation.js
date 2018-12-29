@@ -43,6 +43,17 @@ function registerLogin(){
         return false;
     }
 
+    var person=new Person();
+    person.firstname=firstname;
+    person.middlename=middlename;
+    person.lastname=lastname;
+    person.email=email;
+    person.mobile=mobile;
+    person.password=password;
+    person.confirmpassword=confirmpassword;
+ 
+    console.log(person);
+
 }    
 
 function loginValidate(){
@@ -58,17 +69,6 @@ function loginValidate(){
         document.getElementById("loginpassword").innerHTML="Incorrect Password";
         return false;
     }
-
-    var person=new Person();
-   person.firstname=firstname;
-   person.middlename=middlename;
-   person.lastname=lastname;
-   person.email=email;
-   person.mobile=mobile;
-   person.password=password;
-   person.confirmpassword=confirmpassword;
-
-   console.log(person);
 }
 
 class Person{
